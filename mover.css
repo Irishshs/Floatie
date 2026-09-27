@@ -1,6 +1,7 @@
 body{
     background-color: hsl(0, 70%, 78%);
     margin: 0;
+    overflow-x: hidden;
 }
 
 .Main {
@@ -19,6 +20,7 @@ body{
     font-family: system-ui, -apple-system, sans-serif;
     font-weight: 800;
     color: #e63946;
+    font-size: clamp(2rem, 8vw, 4rem);
     border-radius: 10px;
     background: linear-gradient(45deg, #d62828, #f77f00);
     backdrop-filter: blur(8px);
@@ -42,12 +44,23 @@ body{
 .fcontainer {
     display: flex;
     flex-direction: row;
-    gap: 70px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 90%;
+    max-width: 600%;
+}
+
+.flowers p {
+    margin: 0;
 }
 
 .flowers {
     text-align: center;
     font-size: 50px;
+    text-align: center;
+    font-size: clamp(2rem, 7vw, 3.5rem);
 }
 
 #flower1 {
