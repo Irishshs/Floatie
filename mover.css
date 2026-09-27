@@ -1,0 +1,109 @@
+body{
+    background-color: hsl(0, 70%, 78%);
+    margin: 0;
+}
+
+.Main {
+    width: 100%;
+    min-height: 100vh;
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    text-align: center;
+}
+
+#text {
+    font-family: system-ui, -apple-system, sans-serif;
+    font-weight: 800;
+    color: #e63946;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #d62828, #f77f00);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 3px;
+    margin: 0;
+}
+
+#text {
+    animation: pulse 3s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+.fcontainer {
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+}
+
+.flowers {
+    text-align: center;
+    font-size: 50px;
+}
+
+#flower1 {
+    animation-name: bounce;
+    animation-duration: 5s;
+    animation-delay: 100ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-play-state: running;
+}
+
+#flower2 {
+    animation-name: bounce;
+    animation-duration: 5s;
+    animation-delay: 200ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-play-state: running;
+}
+
+#flower3 {
+    animation-name: bounce;
+    animation-duration: 5s;
+    animation-delay: 300ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-play-state: running;
+}
+
+#flower4 {
+    animation-name: bounce;
+    animation-duration: 5s;
+    animation-delay: 100ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-play-state: running;
+}
+
+#flower5 {
+    animation-name: bounce;
+    animation-duration: 5s;
+    animation-delay: 200ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-play-state: running;
+}
+
+#flower6 {
+    animation-name: bounce;
+    animation-duration: 5s;
+    animation-delay: 300ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-play-state: running;
+}
+
+@keyframes bounce {
+    50%{transform: translateY(100%);}
+}
